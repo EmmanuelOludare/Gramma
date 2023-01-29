@@ -17,6 +17,19 @@ const Word = (props) => {
             </div>
             <p className="word__phonetic">{props.word.phonetic}</p>
         </div>
+        <div className="meanings">
+        {props.word.meanings.map((meaning, index) => (
+        <div key={index} className="meaning__example">
+          <p className="part__of__speech">{meaning.partOfSpeech}</p>
+          {meaning.definitions.map((definition, index) => (
+            <div key={index}>
+              <p className="word__definition">{definition.definition}</p>
+              {definition.example && <p className="word__example">Example: <i>{definition.example}</i></p>}
+            </div>
+          ))}
+        </div>
+      ))}
+        </div>
     </div>
   )
 }
