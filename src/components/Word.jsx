@@ -30,6 +30,15 @@ const Word = (props) => {
         </div>
       ))}
         </div>
+        <div className="image__container">
+            {props.images.map((image) => (
+            <img
+                className="image"
+                key={image.id}
+                src={image.src.medium}
+            />
+            ))}
+      </div>
     </div>
   )
 }
