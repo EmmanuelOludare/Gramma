@@ -50,6 +50,7 @@ function App() {
       </div>
       <Search formData={formData} handleChange={handleChange} getWord={getWord}/>
       <Word word={word} images={images}/>
+      <p>Made with ❤️ by the Hybrid.</p>
     </div>
   )
 }
