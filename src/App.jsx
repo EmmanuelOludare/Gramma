@@ -50,7 +50,7 @@ function App() {
       </div>
       <Search formData={formData} handleChange={handleChange} getWord={getWord}/>
       <Word word={word} images={images}/>
-      <p>Made with ❤️ by the Hybrid.</p>
+      <p className='attribution'>Made with ❤️ by <a href="https://twitter.com/theHybridCoder" target="_blank">the Hybrid</a>.</p>
     </div>
   )
 }
