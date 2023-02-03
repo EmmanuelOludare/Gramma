@@ -21,15 +21,19 @@ const Word = (props) => {
         {props.word.meanings.map((meaning, index) => (
         <div key={index} className="meaning__example">
           <p className="part__of__speech">{meaning.partOfSpeech}</p>
+          <p className='meaning__text'>Meaning</p>
           {meaning.definitions.map((definition, index) => (
-            <div key={index}>
-              <p className="word__definition">{definition.definition}</p>
-              {definition.example && <p className="word__example">Example: <i>{definition.example}</i></p>}
+            <div key={index} className='definition__example'>
+              <ul className='definition__container'>
+                <li className="word__definition">{definition.definition}</li>
+              </ul>
+              {definition.example && <p className="word__example">"{definition.example}"</p>}
             </div>
           ))}
         </div>
       ))}
         </div>
+        {props.images.length > 1 &&
         <div className="image__container">
             {props.images.map((image) => (
             <img
@@ -38,7 +42,7 @@ const Word = (props) => {
                 src={image.src.medium}
             />
             ))}
-      </div>
+      </div>}
     </div>
   )
 }
