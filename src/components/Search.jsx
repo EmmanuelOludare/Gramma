@@ -10,7 +10,7 @@ const Search = (props) => {
           onChange={props.handleChange}
           value={props.formData.message}
         />
-        <div className="search-icon" onClick={props.getWord}><img src={searchIcon} /></div>
+        <div className="search-icon" onClick={props.getWord}><img src={searchIcon} alt="search icon" /></div>
       </div>
     </div>
   )

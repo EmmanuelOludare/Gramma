@@ -28,6 +28,24 @@ body {
   gap: 25px;
 }
 
+.FallBack{
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 30px 0 rgb(31 119 135 / 15%);
+}
+
+.back__arrow{
+  height:24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.error__message{
+  margin-top:.5rem;
+}
+
 .Search {
   width: 100%;
   background-color: #ffffff;

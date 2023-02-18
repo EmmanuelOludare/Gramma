@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.scss'
 import Search from './components/Search';
 import Word from './components/Word';
+import FallBack from './components/FallBack';
 import Logo from './components/images/logo.svg';
 import axios from 'axios';
 
@@ -48,8 +49,12 @@ function App() {
       <div className="logo__container">
       <img src={Logo} alt="gramma logo"/>
       </div>
-      <Search formData={formData} handleChange={handleChange} getWord={getWord}/>
-      <Word word={word} images={images}/>
+      {word === undefined ? <FallBack /> : 
+      <div>
+        <Search formData={formData} handleChange={handleChange} getWord={getWord}/>
+        <Word word={word} images={images}/>
+      </div>
+      }
       <p className='attribution'>Made with ❤️ by <a href="https://twitter.com/theHybridCoder" target="_blank">the Hybrid</a>.</p>
     </div>
   )
