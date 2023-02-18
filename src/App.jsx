@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="App">
       <div className="logo__container">
-      <img src={Logo}/>
+      <img src={Logo} alt="gramma logo"/>
       </div>
       <Search formData={formData} handleChange={handleChange} getWord={getWord}/>
       <Word word={word} images={images}/>

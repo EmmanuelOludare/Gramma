@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  font-family: cursive;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
 }
 
@@ -143,18 +143,15 @@ body {
   width: 100%;
   border-bottom: #49b265 solid 2px;
   border-radius: 2px;
-  opacity: .8;
 }
 
 .meaning__text{
-  opacity: .8;
+  opacity: .85;
   color: #49b265;
-  font-weight: lighter;
 }
 
 .definition__example{
   padding-left:.5rem;
-  font-weight: lighter;
 }
 
 .definition__container{
