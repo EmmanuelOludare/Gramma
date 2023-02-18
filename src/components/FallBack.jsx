@@ -8,7 +8,7 @@ const FallBack = () => {
   return (
     <div className="FallBack">
         <img src={arrowIcon} alt="arrow back" className="back__arrow" onClick={handleReload}/>
-        <p className="error__message">We’re sorry, we couldn’t find any results for your search.</p>
+        <p className="error__message">Sorry, we couldn't find the word you were looking for.</p>
     </div>
   )
 }
