@@ -1,14 +1,10 @@
-import arrowIcon from './images/back-arrow.png';
+import errorImage from './images/404.svg';
 
 const FallBack = () => {
-    const handleReload = (props) => {
-        window.location.reload();
-    }
-
-  return (
+ return (
     <div className="FallBack">
-        <img src={arrowIcon} alt="arrow back" className="back__arrow" onClick={handleReload}/>
-        <p className="error__message">Sorry, we couldn't find the word you were looking for.</p>
+        <img src={errorImage} alt="404 illustration" className="" />
+        <p className="error__message">Sorry, we couldn't find the word you were looking for. This may be due to poor internet connectivity or unavailability of the word on our part.</p>
     </div>
   )
 }
