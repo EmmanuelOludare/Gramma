@@ -14,7 +14,7 @@ function App() {
   const [images, setImages] = useState();
   const [isLoading,setIsLoading] = useState(true);
   const [isNightMode, setIsNightMode] = useState(false);
-  const apiURL = `https://gramma.netlify.app`;
+  const apiURL = `https://gramma-proxy-api.onrender.com`;
 
   useEffect(() => {
     const searchWord = formData.word;
