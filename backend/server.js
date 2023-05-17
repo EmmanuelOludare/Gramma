@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.json('hi')
+    res.json('Welcome to the Gramma api pages')
 })
 
 app.get('/search', (req, res) => {
@@ -47,4 +47,4 @@ app.get('/images', (req, res) => {
     }
 })
 
-app.listen(4000, () => console.log(`Server is running on port ${PORT}`))
+app.listen(4000, () => console.log(`We're live 🎉`))

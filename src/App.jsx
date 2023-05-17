@@ -55,7 +55,6 @@ function App() {
   };
 
   const getWord = () =>  {
-    setWord(null)
     setIsLoading(true);
     const searchWord = formData.word;
     if(searchWord) {
